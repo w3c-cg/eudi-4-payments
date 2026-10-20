@@ -1,9 +1,13 @@
 # Interoperable Payment Authorization Evidence Profile
 
-**Status:** Discussion proposal; not an adopted specification  
-**Prepared:** 20 October 2026  
-**Version:** 0.1  
-**Prepared by:** Dalibor Gogic (DLBR)  
+**Status:** Discussion proposal; not an adopted specification
+
+**Prepared:** 20 October 2026
+
+**Version:** 0.1
+
+**Prepared by:** Dalibor Gogic (DLBR)
+
 **Purpose:** Invite a bank, an SPC implementation team and an EUDI wallet team to conduct a small interoperability experiment.
 
 ## Abstract
