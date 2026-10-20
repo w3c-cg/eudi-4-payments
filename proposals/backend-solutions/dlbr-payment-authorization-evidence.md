@@ -4,7 +4,7 @@
 
 **Prepared:** 20 October 2026
 
-**Version:** 0.1
+**Version:** 0.2
 
 **Prepared by:** Dalibor Gogic (DLBR)
 
@@ -117,6 +117,9 @@ Keep credentials and sensitive evidence within authorized boundaries. A merchant
 
 ## 9. Relation to existing specifications
 
+This experiment aims to provide implementation evidence and reusable acceptance tests that may inform EPC’s SCARLET initiative. It does not propose a competing scheme or liability framework. Contractual eligibility, rights, obligations and liability remain governed by applicable law, contracts and the selected scheme. SPC is included as a parallel authentication mechanism for comparison; its inclusion does not imply coverage by SCARLET.
+
+- **SCARLET:** EPC’s planned SCA Acceptance Rulebook and Liability Framework for EUDIW Transactions includes business/contractual, functional/operational and technical rules building on ARF/TS12 and pilot contributions. Its first rulebook is intended for December 2027, after a summer 2027 consultation. These are announced plans, not a published acceptance specification or evidence that this experiment is endorsed.
 - **SPC:** browser-mediated payment confirmation using WebAuthn. Apply native assertion, origin, transaction and applicable browser-bound-key checks. This experiment adds bank-context matching and explicit acceptance outcomes.
 - **EWC RFC007/RFC008:** Payment Wallet Attestation and payment-data confirmation using OpenID4VP and transaction-data hashes in a key-binding JWT. RFC008 already specifies matching payment details against intermediary-provided context in three-party flows.
 - **TS12:** EUDI-wallet SCA processing, transaction types and additional proof claims. Select its exact version and associated deployment/rulebook requirements.
@@ -148,6 +151,7 @@ Use synthetic transactions first. Any subsequent funds-moving trial requires the
 3. Which evidence is sufficient for the bank's factor and newly registered device policies?
 4. What trust/status and time evidence is needed for historical verification?
 5. Can one bank, one SPC implementation and one wallet team agree to run the same negative-test matrix?
+6. Could the wallet acceptance checks and negative-test matrix inform SCARLET development, and what is the appropriate contribution route?
 
 The requested outcome is agreement on a small experiment and its participants, not immediate adoption of another payment standard.
 
@@ -162,3 +166,4 @@ References checked 20 October 2026. Fixed revisions support review; pilot partic
 - [PaSO at reviewed revision](https://github.com/APTITUDE-Consortium/payments-and-sca-for-openid/tree/cace6df294a5b11fff7be62e7d6bf9fa3e646589)
 - [ARF Topic AA refinement discussion #660](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/discussions/660)
 - [EUDI-4-Payments proposal repository](https://github.com/w3c-cg/eudi-4-payments)
+- [EPC SCARLET announcement](https://www.europeanpaymentscouncil.eu/news-insights/news/epc-launches-scarlet-initiative-support-consistent-use-eu-digital-identity)
